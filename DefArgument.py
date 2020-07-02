@@ -1,8 +1,8 @@
 def ask_ok(prompt, retries=4, reminder='please! try again'):
     while True:
-        ok = input('enter ', prompt)
+        ok = input(prompt)
         if ok in ('y', 'ye', 'yes'):
-           return True
+            return True
         if ok in ('n', 'no', 'nop', 'nope'):
             return False
         retries = retries - 1
@@ -11,3 +11,4 @@ def ask_ok(prompt, retries=4, reminder='please! try again'):
         print(reminder)
 
 
+ask_ok('Do you really want to quit?')
