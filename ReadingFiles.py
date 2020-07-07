@@ -1,4 +1,4 @@
-with open('Testing File.txt') as f:
+with open('Testing File Read.txt') as f:
     print(f.readline())
     print(f.readline())
 
